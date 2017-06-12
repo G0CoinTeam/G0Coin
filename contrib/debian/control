@@ -1,0 +1,66 @@
+Source: g0coin
+Section: utils
+Priority: optional
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 0.9.2
+Homepage: https://www.g0coin.com/
+Vcs-Git: git://github.com/g0cointeam/g0coin.git
+Vcs-Browser: https://github.com/G0CoinTeam/G0Coin
+
+Package: g0coind
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ G0Coin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. G0Coin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. G0Coin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, g0coind, and the CLI tool
+ g0coin-cli to interact with the daemon.
+
+Package: g0coin-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ G0Coin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. G0Coin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. G0Coin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides G0Coin-Qt, a GUI for G0Coin based on Qt.
+
+Package: g0coin-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ G0Coin is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. G0Coin uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. G0Coin Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides g0coin-tx, a command-line transaction creation
+ tool which can be used without a g0coin daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

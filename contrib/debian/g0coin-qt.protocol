@@ -1,0 +1,11 @@
+[Protocol]
+exec=g0coin-qt '%u'
+protocol=g0coin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

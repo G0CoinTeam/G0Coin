@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=G0Coin
+Comment=G0Coin P2P Cryptocurrency
+Comment[fr]=G0Coin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=G0Coin, eşten eşe kriptografik sanal para birimi
+Exec=g0coin-qt %u
+Terminal=false
+Type=Application
+Icon=g0coin128
+MimeType=x-scheme-handler/g0coin;
+Categories=Office;Finance;

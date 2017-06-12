@@ -1,0 +1,6 @@
+usr/local/bin/g0coin-qt usr/bin
+share/pixmaps/g0coin32.png usr/share/pixmaps
+share/pixmaps/g0coin16.png usr/share/pixmaps
+share/pixmaps/g0coin128.png usr/share/pixmaps
+debian/g0coin-qt.desktop usr/share/applications
+debian/g0coin-qt.protocol usr/share/kde4/services/
